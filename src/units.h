@@ -22,6 +22,8 @@ namespace YOBA {
 
 	class Units {
 		public:
+			constexpr static float earthGMs2 = 9.80665f;
+
 			constexpr static float convertSpeed(const float value, const SpeedUnit fromUnit, const SpeedUnit toUnit) {
 				switch (fromUnit) {
 					case SpeedUnit::meterPerSecond: {
